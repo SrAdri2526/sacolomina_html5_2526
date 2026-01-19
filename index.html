@@ -29,6 +29,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
+    <style>
+            main {
+      padding: 2rem;
+    }
+
+    .camisetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .camiseta {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .camiseta img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .camiseta button {
+      margin-top: auto;
+      padding: 0.5rem;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }  
+    </style>
 </head>
 <body>
 
@@ -63,6 +99,30 @@
 
     <main>
 
+    <h2>Camisetas destacadas</h2>
+    <br>
+    <section class="camisetas">
+      <div class="camiseta">
+        <img src="https://via.placeholder.com/300x200" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p>20.00€</p>
+        <button>Agregar al carrito</button>
+      </div>
+
+      <div class="camiseta">
+        <img src="fotos/camisetamadrid24252.jpg" alt="Real Madrid 24/25 2a Equipación">
+        <h3>Real Madrid 24/25 2a Equipación</h3>
+        <p>20.00€</p>
+        <button>Agregar al carrito</button>
+      </div>
+
+      <div class="camiseta">
+        <img src="fotos/camisetamadrid2425.jpg" alt="Real Madrid 24/25 1a Equipación">
+        <h3>Real Madrid 24/25 1a Equipación</h3>
+        <p>20.00€</p>
+        <button>Agregar al carrito</button>
+      </div>
+    </section>
             
     </main>
 

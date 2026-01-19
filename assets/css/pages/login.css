@@ -1,0 +1,14 @@
+.main {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_container {
+    width: 50%;
+    font-size: large;
+    outline: solid black 1px;
+    padding: 1rem;
+}
+
