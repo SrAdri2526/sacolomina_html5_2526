@@ -1,51 +1,15 @@
 const products = [
     {
-        name: "Switch",
-        category: "Red",
-        price: 250.99,
-        img_url: "https://m.media-amazon.com/images/I/71pRPDdY1SL._AC_SX416_CB1169409_QL70_.jpg"
+        name: "AC Milan 1a Equipación 24/25",
+        category: "Serie A",
+        price: 20.00,
+        img_url: "https://m.media-amazon.com/images/I/514pgSou8DL._AC_UL320_.jpg"
     },
     {
-        name: "Router",
-        category: "Red",
-        price: 50.50,
-        img_url: "https://m.media-amazon.com/images/I/51FvsWw1oGL._AC_UL480_FMwebp_QL65_.jpg"
-    },
-    {
-        name: "Server",
-        category: "PC",
-        price: 500.00,
-        img_url: "https://m.media-amazon.com/images/I/61QB2Uya4IL._AC_UL480_FMwebp_QL65_.jpg"
-    },
-    {
-        name: "Portatil",
-        category: "PC",
-        price: 1225.95,
-        img_url: "https://m.media-amazon.com/images/I/61vw+DV946L._AC_UL480_FMwebp_QL65_.jpg"
-    },
-    {
-        name: "Ratón",
-        category: "Periférico",
-        price: 24.87,
-        img_url: "https://m.media-amazon.com/images/I/51WmJULWbHL._AC_UL480_FMwebp_QL65_.jpg"
-    },
-    {
-        name: "Teclado",
-        category: "Periférico",
-        price: 39.50,
-        img_url: "https://m.media-amazon.com/images/I/61qIsibRybL._AC_UL480_FMwebp_QL65_.jpg"
-    },
-    {
-        name: "Pulsera antiestática",
-        category: "Herramienta",
-        price: 7.99,
-        img_url: "https://m.media-amazon.com/images/I/71vFRH2IrrL._AC_UL480_FMwebp_QL65_.jpg"
-    },
-    {
-        name: "Destornillador de precisión",
-        category: "Herramienta",
-        price: 8.95,
-        img_url: "https://m.media-amazon.com/images/I/81Wyfm2xSjL._AC_UL480_FMwebp_QL65_.jpg"
+        name: "Real Madrid 25/26 1a Equipación",
+        category: "LaLiga",
+        price: 20.00,
+        img_url: "https://m.media-amazon.com/images/I/51bs6Ahd8jL._AC_UL320_.jpg"
     }
 
 ];
@@ -91,10 +55,10 @@ function applyFilters() {
     // 2. Obtener las categorías seleccionadas
     // Buscamos todos los checkboxes que estén marcados
     const activeCategories = [];
-    if (document.getElementById('cat1').checked) activeCategories.push("Red");
-    if (document.getElementById('cat2').checked) activeCategories.push("PC");
-    if (document.getElementById('cat3').checked) activeCategories.push("Periférico");
-    if (document.getElementById('cat4').checked) activeCategories.push("Herramienta");
+    if (document.getElementById('cat1').checked) activeCategories.push("LaLiga");
+    if (document.getElementById('cat2').checked) activeCategories.push("Premier League");
+    if (document.getElementById('cat3').checked) activeCategories.push("Serie A");
+    if (document.getElementById('cat4').checked) activeCategories.push("Selecciones");
 
     // 3. Filtrar el array original
     const filteredProducts = products.filter(product => {
