@@ -80,7 +80,7 @@ const products = [
     {
         name: "España 2010 2a Equipación",
         category: "Selecciones",
-        price: 90.00,
+        price: 110.00,
         img_url: "https://madrid-shop.com/wp-content/uploads/2021/12/11_8475D622-6A46-4486-989E-3C268E453673.jpeg"
     },
     {
@@ -88,6 +88,36 @@ const products = [
         category: "Selecciones",
         price: 150.00,
         img_url: "https://www.camisetasdefutbolshop.com/image/cache/20250318SX/camiseta-zidane-10-francia-1-equipacion-retro-1998-002-shop-270x270.webp" 
+    },
+    {
+        name: "UD Las Palmas 97/98",
+        category: "Retro",
+        price: 120.00,
+        img_url: "https://elultimo10shop.com/cdn/shop/files/IMG-8798.webp?v=1735326636"
+    },
+    {
+        name: "Juventus 1a Equipación 25/26",
+        category: "Serie A",
+        price: 65.00,
+        img_url: "https://i1.t4s.cz//products/jn5237/931323-960.webp"
+    },
+    {
+        name: "Inter Milan 1a Equipación 25/26",
+        category: "Serie A",
+        price: 85.00,
+        img_url: "https://www.futbolemotion.com/imagesarticulos/300419/grandes/camiseta-nike-inter-milan-cuarta-equipacion-2025-2026-nino-blue-1.webp"
+    },
+    {
+        name: "Portugal 2026 1a Equipación",
+        category: "Selecciones",
+        price: 100.00,
+        img_url: "https://xclusivejerseys.com/wp-content/uploads/2025/09/Screenshot2025-09-22at18.45.16.png"
+    },
+    {
+        name: "Bilbao 1995/97",
+        category: "Retro",
+        price: 130.00,
+        img_url: "https://camisetasfutbolbaloncesto.com/cdn/shop/files/image_ff913306-5662-4170-9983-35d719ed2ca7-Photoroom.jpg?v=1740595610&width=1946"
     }
 ];
 
