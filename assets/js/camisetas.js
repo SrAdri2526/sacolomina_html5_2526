@@ -43,8 +43,8 @@ const products = [
     },
     {
         name: "Brazil x Stussy",
-        category: "Selecciones",
-        price: 300.00,
+        category: "Retro",
+        price: 250.00,
         img_url: "https://camisfutgol.com/wp-content/uploads/2025/06/d9df4568-34d2-423f-9ff7-758ea80ad149.jpeg"
     },
     {
@@ -52,6 +52,42 @@ const products = [
         category: "Retro",
         price: 40.00,
         img_url: "https://sportclubmemories.com/wp-content/uploads/2025/01/Image-51-fotor-202501311640-scaled.jpg"
+    },
+    {
+        name: "Real Betis 1a Equipación 25/26",
+        category: "LaLiga",
+        price: 90.00,
+        img_url: "fotos/5715688727198.webp" 
+    },
+    {
+        name: "PSG 1a Equipación 25/26",
+        category: "Ligue 1",
+        price: 85.00,
+        img_url: "https://cdn.blazimg.com/300/product/2/0/2025_nike_hj4593-411_1.webp"
+    },
+    {
+        name: "Marsella 3a Equipación 25/26",
+        category: "Ligue 1",
+        price: 70.00,
+        img_url: "https://contents.mediadecathlon.com/m23412348/k$0d076e71ee5b112c2c21ff4513386e5a/picture.jpg"
+    },
+    {
+        name: "Olympique de Lyon 2a Equipación 25/26",
+        category: "Ligue 1",
+        price: 75.00,
+        img_url: "https://cdn.blazimg.com/300/product/a/d/adidas_jl1884_nindig_1.webp" 
+    },
+    {
+        name: "España 2010 2a Equipación",
+        category: "Selecciones",
+        price: 90.00,
+        img_url: "https://madrid-shop.com/wp-content/uploads/2021/12/11_8475D622-6A46-4486-989E-3C268E453673.jpeg"
+    },
+    {
+        name: "Zidane 10 Francia 1998 1a Equipación",
+        category: "Selecciones",
+        price: 150.00,
+        img_url: "https://www.camisetasdefutbolshop.com/image/cache/20250318SX/camiseta-zidane-10-francia-1-equipacion-retro-1998-002-shop-270x270.webp" 
     }
 ];
 
@@ -100,6 +136,8 @@ function applyFilters() {
     if (document.getElementById('cat2').checked) activeCategories.push("Premier League");
     if (document.getElementById('cat3').checked) activeCategories.push("Serie A");
     if (document.getElementById('cat4').checked) activeCategories.push("Selecciones");
+    if (document.getElementById('cat5').checked) activeCategories.push("Retro");
+    if (document.getElementById('cat6').checked) activeCategories.push("Ligue 1");
 
     // 3. Filtrar el array original
     const filteredProducts = products.filter(product => {
