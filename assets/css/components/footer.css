@@ -3,4 +3,10 @@ footer {
     padding: 1rem;
     font-family: Roboto Mono;
     font-weight: 150;
+    background-image: url(../../../fotos/fondofutbol.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: solid black; 
+    padding: 20px;
 }
