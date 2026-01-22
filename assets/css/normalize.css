@@ -51,7 +51,7 @@ body {
 header { grid-area: header; min-height: 80px; }
 main   { grid-area: main;   min-height: 300px; background: var(--color-fondo); }
 aside  { grid-area: aside;  min-height: 150px; background: var(--color-gris); }
-footer { grid-area: footer; min-height: 60px;; }
+footer { grid-area: footer; min-height: 60px; background: var(--color-acento); }
 
 
 

@@ -10,5 +10,6 @@
     font-size: large;
     outline: solid black 1px;
     padding: 1rem;
+    box-shadow: none;
 }
 
