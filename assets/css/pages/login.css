@@ -3,13 +3,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../../../fotos/fondofutbol.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
 }
 
 .login_container {
     width: 50%;
     font-size: large;
-    outline: solid black 1px;
     padding: 1rem;
     box-shadow: none;
+    background-color: #f3f4f6;
 }
 
