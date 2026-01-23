@@ -1,5 +1,9 @@
     main {
       padding: 1rem;
+      height: 100%;
+      background-image: url(../../../fotos/ilustracion-plana-estadio-futbol-fondo-pelota-futbol-delante-porteria_98292-12385.avif);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     h2 {
