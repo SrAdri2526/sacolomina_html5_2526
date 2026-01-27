@@ -1,8 +1,354 @@
-.cookies{
+main {
     width: 100%;
-    font-size: large;
-    outline: solid black 1px;
-    background-color: #f3f4f6;
-    padding: 1rem;
-    box-shadow: none;
+    min-height: 100vh;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.cookies {
+    width: 100%;
+    padding: 50px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    animation: fadeInUp 0.6s ease-out;
+    position: relative;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Barra superior decorativa */
+.cookies::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.cookies h1 {
+    color: #667eea;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+    position: relative;
+    display: inline-block;
+}
+
+.cookies h1::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, #764ba2 0%, transparent 100%);
+}
+
+.cookies h1:first-of-type {
+    font-size: 36px;
+    color: #2d3748;
+    border-bottom: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.cookies h1:first-of-type::after {
+    display: none;
+}
+
+.cookies h1:first-of-type::before {
+    content: '🍪';
+    margin-right: 15px;
+    font-size: 36px;
+}
+
+.cookies p {
+    color: #4a5568;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.cookies br {
+    content: "";
+    display: block;
+    margin: 10px 0;
+}
+
+/* Iconos para cada sección */
+.cookies h1:not(:first-of-type)::before {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.cookies h1:nth-of-type(2)::before {
+    content: '❓';
+}
+
+.cookies h1:nth-of-type(3)::before {
+    content: '📋';
+}
+
+.cookies h1:nth-of-type(4)::before {
+    content: '🔄';
+}
+
+.cookies h1:nth-of-type(5)::before {
+    content: '⚙️';
+}
+
+.cookies h1:nth-of-type(6)::before {
+    content: '✅';
+}
+
+/* Estilos para listas ordenadas */
+.cookies ol {
+    counter-reset: item;
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.cookies ol li {
+    counter-increment: item;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f7fafc;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.cookies ol li::before {
+    content: counter(item);
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+}
+
+.cookies ol li p:first-child {
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.cookies ol li p:not(:first-child) {
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+/* Estilos para listas no ordenadas */
+.cookies ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+.cookies ul li {
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e9ecff 100%);
+    border-radius: 8px;
+    border-left: 3px solid #667eea;
+    font-weight: 600;
+    color: #2d3748;
+    transition: all 0.3s ease;
+}
+
+.cookies ul li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.cookies ul li::before {
+    content: '🌐';
+    margin-right: 10px;
+}
+
+.cookies ul li b {
+    color: #667eea;
+}
+
+/* Destacar primer párrafo de cada sección */
+.cookies h1 + br + p {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e9ecff 100%);
+    padding: 20px;
+    border-left: 4px solid #667eea;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    color: #2d3748;
+}
+
+/* Párrafo especial de advertencia */
+.cookies p:contains("no se responsabiliza") {
+    background: #fff5f5;
+    border-left: 4px solid #fc8181;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #c53030;
+}
+
+/* Efecto hover en títulos */
+.cookies h1:hover {
+    color: #764ba2;
+    transition: color 0.3s ease;
+}
+
+/* Animación para títulos */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.cookies h1 {
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
+/* Mejorar legibilidad */
+.cookies {
+    font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Estilo para enlaces */
+.cookies a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.cookies a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
+}
+
+/* Destacar información importante */
+.cookies p strong,
+.cookies p b {
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Último párrafo (Aceptación) */
+.cookies h1:last-of-type + p {
+    background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+    padding: 20px;
+    border-left: 4px solid #48bb78;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #2d3748;
+    box-shadow: 0 4px 15px rgba(72, 187, 120, 0.1);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .cookies {
+        padding: 35px 25px;
+    }
+
+    .cookies h1 {
+        font-size: 24px;
+    }
+
+    .cookies h1:first-of-type {
+        font-size: 30px;
+    }
+
+    .cookies h1:first-of-type::before {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
+    .cookies p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .cookies ol li {
+        padding: 15px;
+        margin-left: 20px;
+    }
+
+    .cookies ol li::before {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cookies {
+        padding: 25px 20px;
+    }
+
+    .cookies h1 {
+        font-size: 20px;
+    }
+
+    .cookies h1:first-of-type {
+        font-size: 26px;
+    }
+
+    .cookies h1:first-of-type::before {
+        font-size: 26px;
+    }
+
+    .cookies p {
+        font-size: 14px;
+    }
+
+    .cookies h1:not(:first-of-type)::before {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+
+    .cookies ol li {
+        padding: 12px;
+        margin-left: 15px;
+    }
+
+    .cookies ul li {
+        padding: 10px 15px;
+    }
 }

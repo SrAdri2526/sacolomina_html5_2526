@@ -1,8 +1,243 @@
-.aviso_legal{
+main {
     width: 100%;
-    font-size: large;
-    outline: solid black 1px;
-    background-color: #F8FAFC;
-    padding: 1rem;
-    box-shadow: none;
+    min-height: 100vh;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.aviso_legal {
+    width: 100%;
+    padding: 50px;
+    background-color: #ffffff;
+    min-height: 100vh;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.aviso_legal h1 {
+    color: #667eea;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #667eea;
+    position: relative;
+    display: inline-block;
+}
+
+.aviso_legal h1::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, #764ba2 0%, transparent 100%);
+}
+
+.aviso_legal h1:first-of-type {
+    font-size: 36px;
+    color: #2d3748;
+    border-bottom: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.aviso_legal h1:first-of-type::after {
+    display: none;
+}
+
+.aviso_legal p {
+    color: #4a5568;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.aviso_legal p:first-of-type {
+    font-size: 18px;
+    color: #2d3748;
+    font-weight: 500;
+    background: linear-gradient(135deg, #f0f4ff 0%, #e9ecff 100%);
+    padding: 20px;
+    border-left: 4px solid #667eea;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.aviso_legal br {
+    content: "";
+    display: block;
+    margin: 10px 0;
+}
+
+/* Estilos especiales para el párrafo con datos de contacto */
+.aviso_legal h1:first-of-type + br + p {
+    background: #f7fafc;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 4px solid #48bb78;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+    line-height: 2;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.aviso_legal h1:first-of-type + br + p br {
+    margin: 5px 0;
+}
+
+/* Efecto hover en secciones */
+.aviso_legal h1:hover {
+    color: #764ba2;
+    transition: color 0.3s ease;
+}
+
+/* Destacar información importante */
+.aviso_legal p strong {
+    color: #667eea;
+    font-weight: 600;
+}
+
+/* Efecto de lectura agradable */
+.aviso_legal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.aviso_legal {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Icono decorativo para cada sección */
+.aviso_legal h1:not(:first-of-type)::before {
+    content: '📋';
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Alternar iconos por sección */
+.aviso_legal h1:nth-of-type(2)::before {
+    content: '⚖️';
+}
+
+.aviso_legal h1:nth-of-type(3)::before {
+    content: '©️';
+}
+
+.aviso_legal h1:nth-of-type(4)::before {
+    content: '⚠️';
+}
+
+.aviso_legal h1:nth-of-type(5)::before {
+    content: '🔒';
+}
+
+.aviso_legal h1:nth-of-type(6)::before {
+    content: '⚖️';
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .aviso_legal {
+        padding: 35px 25px;
+    }
+
+    .aviso_legal h1 {
+        font-size: 24px;
+    }
+
+    .aviso_legal h1:first-of-type {
+        font-size: 30px;
+    }
+
+    .aviso_legal p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .aviso_legal p:first-of-type {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aviso_legal {
+        padding: 25px 20px;
+    }
+
+    .aviso_legal h1 {
+        font-size: 20px;
+    }
+
+    .aviso_legal h1:first-of-type {
+        font-size: 26px;
+    }
+
+    .aviso_legal p {
+        font-size: 14px;
+    }
+
+    .aviso_legal h1:not(:first-of-type)::before {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+}
+
+/* Animación al hacer scroll */
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.aviso_legal h1 {
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
+/* Mejorar legibilidad */
+.aviso_legal {
+    font-family: 'Roboto Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Estilo para enlaces si los hay */
+.aviso_legal a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.aviso_legal a:hover {
+    color: #764ba2;
+    border-bottom-color: #764ba2;
 }
