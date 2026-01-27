@@ -11,8 +11,8 @@
     top: 0;
     z-index: 2000;
     font-family: 'Roboto Mono', monospace;
-    font-weight: 100;
-    background: linear-gradient(90deg, #4CAF50, #087f23);
+    font-weight: 500;
+    background: linear-gradient(90deg, #21af26, #03661a);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     color: white;
 }
@@ -32,12 +32,12 @@
     gap: 10px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #000000;
 }
 
 .logo i {
     font-size: 2rem;
-    color: #0d6efd;
+    color: #ffffff;
 }
 
 .container .logo span {
@@ -75,6 +75,7 @@
     display: block;
     font-size: 2rem;
     cursor: pointer;
+    color: white;
 }
 
 .menu-toggle {
@@ -111,7 +112,7 @@
 }
 
 .nav-list a {
-    color: #555;
+    color: #ffffff;
     font-weight: 500;
     font-size: 1rem;
     display: flex;
